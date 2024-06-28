@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 
-export const Container = styled(Link)`  //  aqui é um button
+export const Container = styled(Link)` 
   display: flex;
   align-items: center;
   gap: 2.5px;

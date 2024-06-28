@@ -1,6 +1,5 @@
-// src/components/AuthorInfo/index.jsx
-import React from 'react';
 import { Container } from './style';
+import React from 'react';
 
 export function AuthorInfo({ imageUrl, authorName }) {
   return (

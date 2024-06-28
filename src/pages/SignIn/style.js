@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import backgroundImg from '../../assets/backgroundImg.png'
 
-
 export const Container  = styled.div`
   height: 100vh;
   display: flex;
@@ -16,8 +15,6 @@ export const Form = styled.form`
   justify-content: center;
   align-items: start;
   text-align: center;
-
-
 
   h1{
     font-size: 48px ;
@@ -41,11 +38,8 @@ export const Form = styled.form`
     color: ${({theme})=> theme.COLORS.PINK};
     align-self: center; 
     margin-top: 42px;
-    
 
   }
-
-  
 
   & > *:nth-child(n + 4) {
     margin-bottom: 8px;

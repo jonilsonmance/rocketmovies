@@ -5,7 +5,7 @@ export const Container = styled.header`
   grid-area: header;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Mantido para melhor alinhamento */
+  justify-content: space-between; 
   gap: 64px;
   width: 100%;
   height: 116px;
@@ -35,20 +35,41 @@ export const Profile = styled(Link)`
   > div {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Mantido para alinhar à direita */
+    align-items: flex-end; 
     margin-right: 16px;
-    line-height: 1.2; /* Ajuste do espaçamento entre linhas */
+    line-height: 1.2; 
 
     strong {
       font-size: 14px;
       color: ${({ theme }) => theme.COLORS.WHITE_200};
-      white-space: nowrap; /* Impede a quebra de linha */
+      white-space: nowrap; 
     }
 
-    span {
+    button {
       font-size: 14px;
       color: ${({ theme }) => theme.COLORS.GRAY_100};
-      cursor: pointer; /* Indica que é clicável */
+      cursor: pointer; 
+      background: none;
+      border: none;
     }
+  }
+`;
+
+export const Search = styled.div`
+  flex: 1;
+  margin: 0 24px;
+
+  input {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: ${({theme})=>theme.COLORS.WHITE};
+    background: ${({ theme }) => theme.COLORS.GRAY_700};
+    border: none;
+    border-radius: 5px;
+  }
+
+  svg {
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
   }
 `;

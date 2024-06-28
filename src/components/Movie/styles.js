@@ -2,25 +2,49 @@ import styled from 'styled-components'
 
 export const Container = styled.button`
   width: 100%;
-  background-color: ${({theme})=> theme.COLORS.BACKGROUND_700};
+  background-color: ${({ theme }) => theme.COLORS.GRBA};
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 15px;
 
-  border: 1px solid red;
   border-radius: 10px;
+  border: none;
 
-  padding: 22px;
+  padding: 32px;
   margin-bottom: 16px;
+  
+  
 
+ 
 
-  >h1{
-    flex: 1;
-    text-align: left;
-    font-weight: 700;
-    font-size: 24px;
+  h1{
+  font-weight: 700;
+  font-size: 24px;
+  color: ${({theme})=> theme.COLORS.WHITE};
+  margin-bottom: 8px;
+  }
+
+  svg {
+    color: ${({ theme }) => theme.COLORS.PINK};
+    font-size: 12px;
+    margin-left:6px;
+  }
+
+  
+
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.6em; 
     color: ${({theme})=> theme.COLORS.WHITE};
   }
   > footer{
     width: 100%;
     display: flex;
-    margin-top: 24px;
   }
+  
 `;

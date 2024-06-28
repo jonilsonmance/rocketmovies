@@ -33,24 +33,23 @@ export const Form = styled.form`
   max-width: 1137px;
   margin: 40px auto;
 
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 
-header{
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+    h1{
+      font-size: 36px;
+      color:${({theme})=> theme.COLORS.WHITE_200};
+      margin-top: 24px;
 
-  h1{
-    font-size: 36px;
-    color:${({theme})=> theme.COLORS.WHITE_200};
-    margin-top: 24px;
-
-  }
+    }
   }
 
   .input-title{
     display: flex;
     gap: 40px;
-    margin-top: 40px;
+    margin-top: 20px;
     
   }
 
@@ -61,15 +60,16 @@ header{
     gap: 40px;
     margin-top: 10px;
   }
+  
   .buttons >:first-child{
     background-color: ${({theme})=> theme.COLORS.BACKGROUND_900};
     color: ${({theme})=> theme.COLORS.PINK};
   }
 
-    svg{
-      color:${({theme})=> theme.COLORS.PINK};
-      margin-right: 5px;
-    }
-  
+  svg{
+    color:${({theme})=> theme.COLORS.PINK};
+    margin-right: 5px;
+  }
+
 `;
 

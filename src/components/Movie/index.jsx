@@ -1,10 +1,15 @@
 import { Container } from './styles';
 import { Tags } from '../Tags';
+import { Stars } from '../Stars';
 
-export function Movie({ data, children, ...rest }) {
+export function Movie({ data,renderStars, children, ...rest }) {
   return (
     <Container {...rest}>
-      <h1>{data.title}</h1>
+      <div>
+        <h1>{data.title}</h1>
+        {renderStars(data.rating)} {/* Renderizar estrelas aqui */}
+      </div>
+      <p>{data.description}</p>
 
       {children}
 
